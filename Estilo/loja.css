@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background: #A9A9A9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3px;
+    align-items: center;
+}
+
+.header img{ 
+    width: 60px;
+}
+
+ul{
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+ ul li a{
+     padding: 10px;
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif 15pt;
+ }
+
+ a:hover{
+     background-color: white;
+     color: black;
+     border-radius: 10px;
+ }
+
+ /* Corpo */
+
+ .flex{
+     background-image: url(../imagens/fundo2.jpg);
+     background-position: center top;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     color: #ffffff;
+     padding-top: 100px;
+     padding-bottom: 100px;
+ }
+
+ .flex > div{
+     text-align: center;
+     font-size: xx-large;
+ }
+ .flex > div a{
+     text-decoration: none;
+     background-color: rgb(173, 13, 13);
+     color: white;
+     padding: 10px;
+     border-radius: 15px;
+ }
+
+ .flex > div a:hover{
+     background-color: steelblue;
+ }
+
+ /* Galeria de fotos */
+
+ .galeria{
+     display: flex;
+     flex-wrap: wrap;
+     text-align: center;
+ }
+ 
+ .galeria img{
+     width: 300px;
+ }
+
+ .galeria > div{
+     flex:  1 1 200px;
+ }
+
+ /* Galeria de fotos */
+
+ /* link responsivo para chamar menu*/
+ .menor{
+     display: none;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .menor img{
+     width: 12px;
+ }
+ /* link responsivo para chamar menu*/
+
+ /* Responsivo */
+ @media(max-width: 600px){
+
+    .menor{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+    }
+
+    .header ul{
+        display: none;
+    }
+ }

@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body h1{
+    text-align: center;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+.header h3{
+    padding: -3px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu a{
+    padding: 17px;
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: aqua;
+}
+.menor{
+    display: none;
+}
+/* Corpo */
+.corpo{
+    background-image: url(../imagens/fundo03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    text-align: center;
+}
+.corpo div{
+    background: rgba(13, 160, 170, 0.212);
+    padding: 10px;
+    margin: auto;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.corpo a{
+    background: rgba(0, 0, 0, 0.315);
+    list-style: none;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    border-radius: 10px;
+}
+.corpo a:hover{
+    background: rgba(0, 0, 0, 0.685);
+}
+/* Galeria de fotos */
+
+.galeria{
+    background-image: url(../imagens/fotos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    text-align: center;
+}
+.galeria img{
+    width: 80px;
+}
+
+.galeria > div{
+    background-color: rgba(0, 0, 0, 0.774);
+    margin: auto;
+    width: 250px;
+    border-radius: 15px;
+}
+.galeria a{
+    background-color: white;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+}
+.galeria a:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+}
+.novi{
+    display: flex;
+}
+.gus{
+    background: rgba(13, 160, 170, 0.212);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+@media(max-width: 600px){
+    .menu{
+        display: none;
+    }
+    .menor{
+        display: block;
+        text-align: center;
+        background: white;
+        padding: 8px;
+        text-decoration: none;
+        color: black;
+        border-radius: 15px;
+    }
+    .menor a{
+        text-decoration: none;
+        color: white;
+        list-style: none;
+        color: black;
+    }
+}

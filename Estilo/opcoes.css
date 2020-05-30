@@ -1,0 +1,33 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+body h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.opcoes img{
+    width: 40px;
+}
+
+.opcoes{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.opcoes > div{
+    text-align: center;
+    background: #DCDCDC;
+    margin: 15px;
+    padding: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+.opcoes  > div:hover{
+    background: #87CEFA;
+}
